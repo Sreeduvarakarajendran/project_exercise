@@ -1,0 +1,168 @@
+.white{
+    width: 80px;
+    height: 80px;
+    background-color: wheat;
+    border:1px solid black;
+}
+.black{
+    width: 80px;
+    height: 80px;
+    background-color: coral;
+    border:1px solid black;
+}
+.container{
+    display: grid;
+    /* grid-template-rows: repeat(4, 1fr); 
+    grid-template-columns: repeat(4, 1fr); */
+    grid-template-rows:  1fr 1fr 1fr 1fr; 
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    width: 300px;
+    height: 300px;
+    margin: 100px;
+}
+.excericse{
+    background-color: #213448;
+    color: white;
+    font-size: 2rem;
+}
+.exercise-container{
+    display:grid;
+    grid-template-rows: 1fr 1fr 2fr;
+    grid-template-columns: auto 400px minmax(200px,500px);
+    grid-auto-rows:50px;
+    gap: 10px;
+    margin-bottom: 100px;
+}
+.emoji-container{
+    /* height: 100px; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr;
+    gap: 10px;
+    ;
+    /* grid-template-columns: ; */
+    
+}
+.emoji{
+    background-color: aquamarine;
+    font-size: 5rem;
+    height: 200px;
+    display: flex;                
+    justify-content: center;      
+    align-items: center;   
+}
+.space-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 100px;
+}
+.love{
+    background-color: aquamarine;
+    /* height: 300px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    grid-row-start: 1;
+    grid-row-end: -4;
+}
+.friend{
+    background-color: lightcoral;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+.family{
+    background-color: maroon;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    grid-column-start: -3;
+    grid-column-end: -1;
+}
+.hobby-container{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    margin-top: 100px;
+    gap:10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    /* height: 100vh; */
+}
+.book{
+    background-color: chartreuse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 50vh;
+    height: 50vh;
+}
+.music{
+    background-color: chocolate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    grid-column-start: -4;
+    grid-column-end: -2;
+    width: 50vh;
+    height: 50vh;
+}
+.play{
+    background-color: midnightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    /* grid-column-start: 3;
+    grid-column-end: -1;
+    grid-row-start: 4;
+    grid-row-end: 1; */
+    grid-column: 3 / 4;
+    grid-row: 1 / 4;
+
+    width: 50vh;
+    height: 100vh;
+}
+.photo-gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    margin: 100px;
+    gap:20px;
+    height: 50vh;
+}
+.photos-1{
+    background-color: darkorange;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    grid-column-start: span 2 ;
+
+}
+.photos-2{
+    background-color: darkslategray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: span 2 ;
+
+}
+.photos-3{
+    background-color: lightcoral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    grid-row-start: span 2;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="/styles/content.css" />
+</head>
+<body>
+
+    <h1>Welcome to Task Manager</h1>
+
+    <section class="task-template">
+        <a id="newtaskbtn" href="/new">New task</a>
+
+        <% tasks.forEach(function(task) { %>
+            <div class="task-card">
+                <div class="task-heading">
+                    <h3><%= task.title %></h3>
+                </div>
+
+                <div class="task-status">
+                    <p><%= task.status %></p>
+                </div>
+
+                <a id="updtaskbtn" href="/edit/<%= task.id %>">Update</a>
+                <br>
+                <a id="deltaskbtn" href="/api/tasks/delete/<%= task.id %>">Delete</a>
+            </div>
+        <% }); %>
+
+    </section>
+
+</body>
+</html>

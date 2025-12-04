@@ -1,0 +1,66 @@
+<%- include('partials/header') %>
+<section class="main">
+    <div class="intro">
+        <h1>Welcome to the Blog Website</h1>
+        <p>Discover insightful articles, stories, and updates from various authors. Dive into our blog to explore a wide range of topics that interest you.</p>
+    </div>
+<div class = "blog-grid">
+        <div class = "blog-card">
+            <div class ="blog-image">
+                <img src ="/image.png" alt="Blog Image">
+            </div>
+            <div class="blog-content">
+                <h2>Cyber Green MT-15</h2>
+                <p>The Cyber Green MT-15 isn’t just another colour variant—it’s a statement. Yamaha created this shade for riders who want to stand out, ride confidently, and own the streets with a futuristic vibe. With its neon accents and matte finish, the Cyber Green edition has quickly become one of the most demanded MT-15 variants among young riders and enthusiasts.</p>
+                
+            </div>
+        </div>
+        <div class = "blog-card">
+            <div class ="blog-image">
+                <img src ="/image-1.jpg" alt="Blog Image">
+            </div>
+            <div class="blog-content">
+                <h2>Cyber Green MT-15</h2>
+                <p>The Cyber Green MT-15 isn’t just another colour variant—it’s a statement. Yamaha created this shade for riders who want to stand out, ride confidently, and own the streets with a futuristic vibe. With its neon accents and matte finish, the Cyber Green edition has quickly become one of the most demanded MT-15 variants among young riders and enthusiasts.</p>
+                
+        </div>
+    </div>
+        <div class = "blog-card">
+            <div class ="blog-image">
+                <img src ="/image-2.jpg" alt="Blog Image">
+            </div>
+            <div class="blog-content">
+                <h2>Cyber Green MT-15</h2>
+                <p>The Cyber Green MT-15 isn’t just another colour variant—it’s a statement. Yamaha created this shade for riders who want to stand out, ride confidently, and own the streets with a futuristic vibe. With its neon accents and matte finish, the Cyber Green edition has quickly become one of the most demanded MT-15 variants among young riders and enthusiasts.</p>
+             </div>
+        </div>
+</div>
+
+</section>
+ <section class="form-section mt-4">
+        <form action="/submit" method="POST" class="mx-auto" style="max-width:700px;">
+            <h2 class="mb-3 text-center">Write your blog about a favorite bike</h2>
+            <div class="mb-3">
+                <label for="author" class="form-label">Author name</label>
+                <input id="author" name="title" type="text" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="w3review" class="form-label">Create your bike blog</label>
+                <textarea id="w3review" name="content" rows="4" class="form-control"></textarea>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </section>
+    <div class = "dynamic-grid">
+   <% if(blogs && blogs.length > 0) { %>
+        <% blogs.forEach(function(blog) { %>
+        <h3><%= blog.title %></h3>
+        <p><%= blog.content %></p>
+        <% }) %>
+    <% } %>
+</div>
+</main>
+
+<%- include('partials/footer') %>

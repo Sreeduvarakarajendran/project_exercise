@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Generator</title>
+    <link rel="stylesheet" href="/style/content.css">
+</head>
+<body>
+    <div class="container">
+        <h3>Let do to something fun!</h3>
+        <form action="/submit" method="POST">
+            <label for="cars">Choose a car:</label>
+            <select name="random-type" id="random-type">
+                <option value="volvo">Education</option>
+                <option value="saab">Charity</option>
+                <option value="opel">Professional</option>
+                <option value="audi">Audi</option>
+            </select>
+            <select name="no-of-options" id="no-of-options">
+                <option value="volvo">1</option>
+                <option value="saab">2</option>
+                <option value="opel">3</option>
+                <option value="audi">4</option>
+            </select>
+            <br><br>
+            <button type="submit" >GO</button>
+</form>
+<div class = "result-section">
+    <% if(activity && activity.activity) { %>
+        <h3>Here is your random generated options:</h3>
+        
+            <%= activity.activity %>
+    <% }else { %>
+        <h3>No data found, please try again!</h3>
+        <% } %>
+
+</div>
+
+    </div>
+</body>
+</html>

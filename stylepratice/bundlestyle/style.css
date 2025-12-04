@@ -1,0 +1,19 @@
+*{
+    background-color: rgb(164, 143, 143)
+}
+.color-title{
+    font-size : 1.5rem
+}
+#red{
+    color : red;
+}
+#blue{
+    color:blue;
+}
+#orange{
+    color:orange
+}
+img{
+    height : 100px;
+    width : 100px;
+}

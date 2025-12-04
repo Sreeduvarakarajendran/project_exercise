@@ -1,0 +1,117 @@
+*{
+    font-family: "Libre Baskerville", serif;
+}
+.rectangle{
+    width: 500px;
+    height: 500px;
+    border-radius: 2px;
+    border: 3px solid chocolate;
+    background-color: lightgreen;
+}
+
+
+    
+    .nav li{
+        list-style: none;
+    }
+    .nav{
+        display: flex;
+        gap :30px
+    }
+    
+.red{
+    background-color: red;
+}
+.orange{
+    background-color: orange;
+}
+.yellow{
+    background-color: yellow;
+}
+.green{
+    background-color: green;
+}
+.blue{
+    background-color: blue;
+}
+.indigo{
+    background-color: indigo;
+}
+.purple{
+    background-color: purple;
+}
+.container{
+   
+    display:inline-flex;
+    flex-direction:row;
+    /* flex-basis:200px; */
+    border:5px solid gold;
+}
+.container>div{
+    flex-basis: 100px;
+}
+.plan-card{
+    max-width: 300px;
+    height: 250px;
+    border-radius: 10px;
+    border:3px solid black;
+    background-color: lightcyan;
+    flex: 1;
+}
+.title-plan{
+   font-family: "Tagesschrift", system-ui;
+}
+.button-class{
+
+    background-color: chocolate;
+    color:white;
+    border-radius: 5px;
+    margin-top: 20px;
+    align-items: center;
+    display: block;             
+  margin-left: auto;           
+  margin-right: auto;  
+
+}
+.plan-card p,li,h2{
+    text-align: center;
+}
+.pricing-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    
+}
+
+@media (min-width:481) and (max-width: 1200px){
+    .rectangle{
+        width: 300px;
+        height: 300px;
+        border-radius: 2px;
+        border: 3px solid chocolate;
+        background-color: powderblue;
+    }
+    .pricing-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+}
+@media(min-width:319px) and (max-width: 480px){
+    .rectangle{
+        width: 100px;
+        height: 100px;
+        border-radius: 2px;
+        border: 3px solid chocolate;
+        background-color: limegreen;
+    }
+    .pricing-container{
+        flex-direction: column;
+        /* justify-content: center;
+        align-items: center; */
+        gap: 30px;
+    }
+}

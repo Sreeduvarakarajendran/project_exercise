@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    background-color:#f2e9e4;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #565264;
+    padding: 12px 25px;
+    margin-bottom: 40px;
+}
+.logo{
+    font-size: 1.1rem;
+    font-weight:100;
+    color: #f2e9e4;
+    justify-content: flex-start;
+}
+.options ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    
+}
+.options ul li{
+    margin: 0 15px;
+   
+}
+.options ul li a{
+    text-decoration: none;
+    color: #f2e9e4;
+}
+.intro h1{
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #565264;
+
+}
+.intro p{
+    text-align: center;
+    font-size: 1rem;
+    color: #565264;
+    margin-bottom: 40px;
+}
+
+.blog-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+
+}
+.blog-card{
+    border:#565264 1px solid;
+    border-radius: 10px;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.3s ease;
+    background-color: #f2e9e4;
+    /* padding: 10px; */
+}
+
+.blog-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.blog-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.blog-content{
+    padding: 15px;
+    text-align: center;
+     color: #565264;
+}
+.blog-content h2{
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+.form-section{
+    padding: 10px 20px;
+    margin-top: 40px;
+    text-align: center;
+}
+.form-section h2{
+    margin-bottom: 20px;
+    color: #565264;
+}
+.btn-primary {
+  background-color: #565264 !important; /* your color */
+  border-color: #565264 !important;
+  color: #fff;
+}
+footer{
+    text-align: center;
+    padding: 15px 0;
+    background-color: #565264;
+    color: #f2e9e4;
+    margin-top: 40px;
+}
+.dynamic-grid_{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+    margin-top: 40px;
+    text-align: center;
+    color: #565264;
+}
+.dynamic-grid_ h3{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.dynamic-grid_ p{
+    font-size: 1rem;
+}

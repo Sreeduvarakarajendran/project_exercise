@@ -1,0 +1,61 @@
+*{
+    font-family:  "Libre Baskerville", serif;
+   /* / color:white; */
+}
+/* #root{
+    background-color:black;
+    width:50%;
+    margin-left: 25%;
+    border: 30px solid black;
+}
+
+.image img{
+  border:white 5px solid;
+  width: 100%;
+}
+p,h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+} */
+h1,h2{
+    color: blue
+}
+div>p{
+    color:red;
+
+}
+div li{
+    color:violet
+}
+li.done{
+    color: seagreen;
+}
+ul p.done{
+    font-size: 0.5rem;
+}
+.outer-box{
+    width: 80%;
+    height: 300px;
+    border : 10px solid violet;
+    background-color: blue;
+}
+.first-class{
+    width: 100%;
+    height: 150px;  
+    /* border:4px solid black; */
+    margin:10px 10px 10px 10px;
+}
+#sp1-id{
+    background-color: red;
+    width: 95%;
+    height: 30px;
+    padding: 10px;
+}
+#sp2-id{
+    background-color: red;
+    width: 95%;
+    height: 30px;
+    padding: 10px;
+}
+    

@@ -1,0 +1,35 @@
+.green{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+}
+.red{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+.blue{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+/* div{
+    display:inline-block;
+    margin-bottom: 10px;
+} */
+.block{
+    display: inline-block;
+}
+.block img{
+    width:200px;
+    height: 200px;
+    border-radius: 10px;
+    float :left;
+}
+p{
+    font-size:2rem;
+}
+.block{
+    display: inline-block;
+}
+    

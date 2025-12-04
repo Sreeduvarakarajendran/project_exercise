@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:cornsilk;
+}
+.container{
+    align-items: center;
+
+}
+form button{
+    display:flex;
+    background-color: goldenrod;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    justify-content: center;
+    margin: 20px auto;
+    border: none;
+}

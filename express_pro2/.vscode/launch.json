@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "pwa-node",
+      "request": "launch",
+      "name": "Launch Express (index.js)",
+      "program": "${workspaceFolder}/projects/express-pro2/index.js",
+      "cwd": "${workspaceFolder}/projects/express-pro2",
+      "console": "integratedTerminal",
+      "runtimeExecutable": "node",
+      "skipFiles": ["<node_internals>/**"]
+    }
+  ]
+}

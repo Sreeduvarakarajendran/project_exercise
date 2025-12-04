@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= heading %></title>
+  <link rel="stylesheet" href="/styles/content.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1><%= heading %></h1>
+
+    <% if (task) { %>
+      <!-- Edit Task -->
+      <form id="editTask" method="POST" action="/api/tasks/<%= task.id %>?_method=PATCH">
+        <label for="title">Title:</label>
+        <input type="text" name="title" id="title" value="<%= task.title %>" required>
+
+        <label for="status">Status:</label>
+        <select name="status" id="status" required>
+          <option value="pending" <%= task.status === 'pending' ? 'selected' : '' %>>Pending</option>
+          <option value="done" <%= task.status === 'done' ? 'selected' : '' %>>Done</option>
+          <option value="note" <%= task.status === 'note' ? 'selected' : '' %>>Note</option>
+        </select>
+
+        <button class="full-width" type="submit"><%= submit %></button>
+      </form>
+
+    <% } else { %>
+      <!-- New Task -->
+      <form id="newTask" method="POST" action="/api/tasks">
+        <label for="title">Title:</label>
+        <input type="text" name="title" id="title" placeholder="Title" required>
+
+        <label for="status">Status:</label>
+        <select name="status" id="status" required>
+          <option value="pending">Pending</option>
+          <option value="done">Done</option>
+          <option value="note">Note</option>
+        </select>
+
+        <button class="full-width" type="submit"><%= submit %></button>
+      </form>
+    <% } %>
+
+  </div>
+</body>
+
+</html>
