@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Summarization</title>
+    <link rel="stylesheet" href="/styles/content.css" />
+</head>
+
+<body>
+    <section class="container">
+        <h1>Welcome to book summarization world</h1>
+
+        <% sumbooks.forEach(book => { %>
+        <div class="item">
+
+            <form action="/delete" method="post">
+                <input 
+                    type="checkbox"
+                    onchange="this.form.submit()"
+                    name="deleteItemId"
+                    value="<%= book.id %>"
+                >
+            </form>
+
+            <div class="book-grid">
+
+                <div class="book-img">
+                    <img src="<%= book.cover_url %>" alt="book-cover">
+                </div>
+
+                <div class="summarization">
+                    <h2><%= book.title %></h2>
+
+                    <div class="bookTime">
+                        <p><%= book.read_date %></p>
+                        <p>Rating: <%= book.rating %> ⭐</p>
+                    </div>
+
+                    <p><%= book.summary %></p>
+                </div>
+
+            </div>
+        </div>
+        <% }) %>
+
+        <!-- Button to go to Add Book Page -->
+        <div class="add-container">
+            <a class="add-button" href="/add">+ Add New Book</a>
+        </div>
+
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+node_modules/
+.env
+*.log
+dist/
+projects/temp/
+2.1+Using+Node/
+.DS_Store
